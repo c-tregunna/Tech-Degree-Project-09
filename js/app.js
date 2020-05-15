@@ -9,5 +9,7 @@
 $('.slides').slick({
     dots: true,
     autoplay: true,
-    arrows: false
+    arrows: false,
+    autoplaySpeed: 4000,
+    fade: true
   });
