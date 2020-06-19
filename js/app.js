@@ -26,7 +26,7 @@ closeBtn.addEventListener('click', () => { // on click of close button, show mai
 //     document.getElementById("myNav").style.width = "100%";
 //   }
 
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
+  // function closeNav() {
+  //   document.getElementById("myNav").style.width = "0%";
+  // }
 
