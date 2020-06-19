@@ -11,14 +11,14 @@ menuIcon.addEventListener('click', () => { // on click of menu icon hide the mai
     mainNav.style.backgroundColor = "transparent";
     menu.style.width = "100%";
     menu.style.transition = "all .8s";
-})
+});
 
 closeBtn.addEventListener('click', () => { // on click of close button, show main-nav and menu button
     menuIcon.style.display = "block";
     mainNav.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
     menu.style.width = "0";
     menu.style.transition = "all .8s";
-})
+});
 
 
 

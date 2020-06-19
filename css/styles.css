@@ -18,17 +18,13 @@ h1 {
     font-size: 2rem;  /*18vw*/
     font-weight: 600;
     letter-spacing: 3px;
-    /* border-bottom: 3px double black; */
     font-family: 'Expletus Sans', cursive;
-    /* text-shadow: 2px 2px 6px antiquewhite; */
 }
 
 h2 {
     font-size: 1.5rem; /*12vw*/
     font-weight: 500;
-    /* border-bottom: 3px solid black; */
     font-family: 'Expletus Sans', cursive;
-    /* text-shadow: 2px 2px 6px  antiquewhite; */
 
 }
 
