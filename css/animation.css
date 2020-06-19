@@ -35,12 +35,11 @@
     }
   }
 
-  .tracking-in-expand {
+  .tracking-in-expand,
+  .tracking-in-expand-2 {
 	-webkit-animation: tracking-in-expand 1.5s ease-in-out both;
 	        animation: tracking-in-expand 1.5s ease-in-out both;
 }
 .tracking-in-expand-2 {
-    -webkit-animation: tracking-in-expand 1.5s ease-in-out both;
-    animation: tracking-in-expand 1.5s ease-in-out both;
     animation-delay: 1s;
 }

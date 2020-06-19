@@ -21,7 +21,6 @@ h1 {
     /* border-bottom: 3px double black; */
     font-family: 'Expletus Sans', cursive;
     /* text-shadow: 2px 2px 6px antiquewhite; */
-    padding-right: 20px;
 }
 
 h2 {
@@ -38,7 +37,7 @@ h2 {
 header {
     background: url('../img/header-img.jpg') no-repeat top center;
     background-size: cover;
-    height: 800px;
+    height: 700px;
     display: flex;
     justify-content: center;
     flex-direction: column;
