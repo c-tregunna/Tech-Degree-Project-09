@@ -16,8 +16,6 @@
 </head>
 <body>
 <nav class="main-nav">
-
-
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn">&times;</a>  <!--href="javascript:void(0)" this was included, is it needed-->
         <div class="overlay-content">
@@ -46,7 +44,27 @@
         </section>
         <section>
             <h3>Contact</h3>
+            <form class="contact-form" id="form">
+                <label>Name</label>
+                <input type="text" name="name">
+                <label>Email</label>
+                <input type="text" name="email">
+                <label>Message</label>
+                <textarea rows="4" name="message"></textarea>
+                <button class="submit" id="show">Submit</button>
+            </form>
         </section>
+
+        <div id="form-alert">
+            <h3>Uh Oh! Something went wrong</h3>
+            <p>Please complete both sections of the form before submission</p>
+            <button id="alert-exit">Close</button>
+          </div>
+          <div id="form-confirm">
+            <h3>Awesome</h3>
+            <p>Your message has been sent</p>
+            <button id="confirm-exit">Close</button>
+          </div>
 
     </main>
 </div>
