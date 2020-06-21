@@ -53,6 +53,12 @@ send.addEventListener('click', e => {
         console.log(validateName);
     }});
 
+// Show current year for copywrite
+
+let today = new Date();
+let year = today.getFullYear();
+let currentYear = document.querySelector('#date');
+currentYear.innerHTML = year;
 
 
     //jQuery validate form
