@@ -77,8 +77,8 @@ button.submit:hover {
 #form-alert,
 #form-confirm {
     display: none;
-    position: absolute;
-    width: 300px;
+    position: relative;
+    width: 80%;
     height: 175px;
     top: 0;
     left: 0;
@@ -86,25 +86,25 @@ button.submit:hover {
     right: 0;
     margin: auto;
     z-index: 100000;
-    background-color: rgb(225, 239, 56);
+    background-color: #f49101;
     border: 1px solid #666;
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px 15px;
     text-align: center;
 }
 #alert-exit,
 #confirm-exit {
     position: absolute;
-    width: 60px;
+    width: 100px;
     bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    background-color: #466B00;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 
