@@ -22,32 +22,64 @@ closeBtn.addEventListener('click', () => { // on click of close button, show mai
     menu.style.transition = "all .8s";
 });
 
-// Dialog box, decided not to use as may not always show in all browsers
 
+// Validate form
 const send = document.querySelector('#show');
 send.addEventListener('click', e => {
-  let validateName = $('input[name="name"]').val();
-  let validateEmail = $('input[name="email"]').val();
-  let validateMessage = $('textarea[name="message"]').val();
+  let validateName = document.querySelector('#name').value;
+  let validateEmail = document.querySelector('#email').value;
+  let validateMessage = document.querySelector('#message').value;
+
+  let form = document.getElementById('form');
+
+  const formAlert = document.getElementById('form-alert');
+  const alertExit = document.getElementById('alert-exit');
+  const formConfirm = document.getElementById('form-confirm');
+  const confirmExit = document.getElementById('confirm-exit');
+
+
   e.preventDefault();
     if (validateName === "" || validateEmail === "" || validateMessage === "") {
-      $('#form-alert').show(); // show the alert that form must be complete
-      $('#alert-exit').on('click', () => {
-        $('#form-alert').hide();
-      });
+        formAlert.style.display = "block"; // show the alert that form must be complete
+        alertExit.addEventListener('click', e => {
+            formAlert.style.display = "none";
+        })
     } else {
-      $('#form-confirm').show(); // show the alert that form has been submitted
-      $('#confirm-exit').on('click', () => {
-        $('#form-confirm').hide();
-        $('#form').trigger("reset"); // resets input and text area
-      });
-    }
-    console.log(e);
-});
+        formConfirm.style.display = "block";  // show the alert that form has been submitted
+        confirmExit.addEventListener('click', e => {
+            formConfirm.style.display = "none";
+        })
+        form.reset(); // resets input and text area
+        console.log(validateName);
+    }});
 
 
 
+    //jQuery validate form
 
+// const send = document.querySelector('#show');
+// send.addEventListener('click', e => {
+//   let validateName = $('input[name="name"]').val();
+//   let validateEmail = $('input[name="email"]').val();
+//   let validateMessage = $('textarea[name="message"]').val();
+//   e.preventDefault();
+//     if (validateName === "" || validateEmail === "" || validateMessage === "") {
+//       $('#form-alert').show(); // show the alert that form must be complete
+//       $('#alert-exit').on('click', () => {
+//         $('#form-alert').hide();
+//       });
+//     } else {
+//       $('#form-confirm').show(); // show the alert that form has been submitted
+//       $('#confirm-exit').on('click', () => {
+//         $('#form-confirm').hide();
+//         $('#form').trigger("reset"); // resets input and text area
+//       });
+//     }
+// });
+
+
+
+// code from menu
 // function openNav() {
 //     document.getElementById("myNav").style.width = "100%";
 //   }

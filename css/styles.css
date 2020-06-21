@@ -16,8 +16,17 @@ body {
 
 main {
     padding-top: 80px;
-    height: 1000px;
 }
+
+/* LINKS */
+
+a,
+a:focus,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
 
 /* HEADINGS */
 
@@ -39,7 +48,7 @@ h2 {
     font-weight: 500;
 }
 
-/* HEADER */
+/* HEADER and FOOTER */
 
 header {
     background: url('../img/header-img.jpg') no-repeat top center;
@@ -49,6 +58,12 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+    color: white;
 }
 
 /* FORM */
