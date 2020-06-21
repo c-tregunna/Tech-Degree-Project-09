@@ -9,6 +9,11 @@ body {
     font: 1em 'Roboto', sans-serif;
 }
 
+/* .container {
+    height: 1800px;
+    scroll-behavior: smooth;
+} */
+
 .wrapper {
     max-width: 1200px;
     margin: auto;
@@ -23,7 +28,7 @@ main {
 a,
 a:focus,
 a:visited {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
@@ -63,11 +68,17 @@ header {
 footer {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 80px;
+    height: auto;
     background-color: black;
     color: white;
     padding: 0 5%;
+}
+
+.social-icon {
+    height: 30px;
+    padding: 0 6px;
 }
 
 /* FORM */
@@ -77,6 +88,27 @@ footer {
     flex-direction: column;
     width: 90%;
     margin: auto;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 40px;
+    background-color: ;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    background-color: #eaeaea;
 }
 
 button.submit {
@@ -145,6 +177,12 @@ button.submit:hover {
     .contact-form {
         width: 60%;
         max-width: 700px;
+    }
+    footer {
+        flex-direction: row;
+    }
+    .email-add {
+        order: 5;
     }
 
 }
