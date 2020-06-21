@@ -96,14 +96,14 @@ button.submit:hover {
 #form-alert,
 #form-confirm {
     display: none;
-    position: relative;
+    position: fixed;
     width: 80%;
     height: 175px;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    margin: auto;
+    margin: 20px auto;
     z-index: 100000;
     background-color: #f49101;
     border: 1px solid #666;
