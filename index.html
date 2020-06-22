@@ -47,11 +47,11 @@
             <h3>Contact</h3>
             <form class="contact-form" id="form">
                 <label>Name</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
                 <label>Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <label>Message</label>
-                <textarea rows="4" name="message" id="message"></textarea>
+                <textarea rows="4" name="message" id="message" required></textarea>
                 <button class="submit" id="show">Submit</button>
             </form>
             <div id="form-alert">
@@ -59,25 +59,21 @@
                 <p>Please complete all sections of the form before submission</p>
                 <button id="alert-exit">Close</button>
               </div>
-              <div id="form-confirm">
+              <div id="thank-you">
                 <h3>Awesome</h3>
                 <p>Thank you for getting in touch</p>
-                <p>Your message has been sent. I will be in touch as soon as I can.</p>
-                <button id="confirm-exit">Close</button>
-              </div>
-        </section>
-
-        <div id="form-alert">
-            <h3>Uh Oh! Something went wrong</h3>
-            <p>Please complete all sections of the form before submission</p>
-            <button id="alert-exit">Close</button>
-          </div>
-          <div id="form-confirm">
+                <p>Your message has been sent and I will be in touch as soon as I can.</p>
+            </div>
+            <!-- <div id="form-confirm">
             <h3>Awesome</h3>
             <p>Thank you for getting in touch</p>
             <p>Your message has been sent. I will be in touch as soon as I can.</p>
             <button id="confirm-exit">Close</button>
-          </div>
+          </div> -->
+
+        </section>
+
+
 
     </main>
 </div>

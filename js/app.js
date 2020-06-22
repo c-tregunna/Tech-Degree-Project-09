@@ -1,5 +1,8 @@
 
-// Menu
+//----------------------
+// Menu slide in and out
+//----------------------
+
 const menuIcon = document.getElementById("menuIcon");
 const mainNav = document.querySelector(".main-nav");
 const closeBtn = document.querySelector(".closebtn");
@@ -22,8 +25,10 @@ closeBtn.addEventListener('click', () => { // on click of close button, show mai
     menu.style.transition = "all .8s";
 });
 
+//---------------------------------------------------------------------------
+// Validate form - if it is not need fully completed and when is it completed
+//---------------------------------------------------------------------------
 
-// Validate form
 const send = document.querySelector('#show');
 send.addEventListener('click', e => {
   let validateName = document.querySelector('#name').value;
@@ -36,24 +41,28 @@ send.addEventListener('click', e => {
   const alertExit = document.getElementById('alert-exit');
   const formConfirm = document.getElementById('form-confirm');
   const confirmExit = document.getElementById('confirm-exit');
+  const thankYou = document.getElementById('thank-you');
 
 
   e.preventDefault();
     if (validateName === "" || validateEmail === "" || validateMessage === "") {
         formAlert.style.display = "block"; // show the alert that form must be complete
+        form.style.display = "none";
         alertExit.addEventListener('click', e => {
             formAlert.style.display = "none";
+            form.style.display = "flex";
         })
+
     } else {
-        formConfirm.style.display = "block";  // show the alert that form has been submitted
-        confirmExit.addEventListener('click', e => {
-            formConfirm.style.display = "none";
-        })
+        thankYou.style.display = "block";  // show the alert that form has been submitted
+        form.style.display = "none";
         form.reset(); // resets input and text area
         console.log(validateName);
     }});
 
+//-------------------------------
 // Show current year for copywrite
+//-------------------------------
 
 let today = new Date();
 let year = today.getFullYear();
@@ -82,6 +91,18 @@ currentYear.innerHTML = year;
 //       });
 //     }
 // });
+
+// else statment to add alert same as the form alert
+    // else {
+    //     formConfirm.style.display = "block";  // show the alert that form has been submitted
+    //     form.style.display = "none";
+    //     confirmExit.addEventListener('click', e => {
+    //         formConfirm.style.display = "none";
+    //     })
+    //     form.reset(); // resets input and text area
+    //     console.log(validateName);
+    // }});
+
 
 
 

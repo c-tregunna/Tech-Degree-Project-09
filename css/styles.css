@@ -93,7 +93,6 @@ footer {
 input[type="text"],
 input[type="email"] {
     height: 40px;
-    background-color: ;
 }
 
 input[type="text"],
@@ -102,6 +101,7 @@ textarea {
     border-radius: 6px;
     border: 1px solid black;
     background-color: #f9f9f9;
+    margin: 10px 0;
 }
 
 input[type="text"]:focus,
@@ -125,12 +125,11 @@ button.submit:hover {
     background-color: rgba(244, 145, 1, .8);
 }
 
-#form-alert,
-#form-confirm {
+#form-alert {
     display: none;
-    position: fixed;
-    width: 80%;
-    height: 175px;
+    /* position: fixed; */
+    width: 60%;
+    height: auto;
     top: 0;
     left: 0;
     bottom: 0;
@@ -143,13 +142,25 @@ button.submit:hover {
     padding: 5px 15px;
     text-align: center;
 }
-#alert-exit,
-#confirm-exit {
-    position: absolute;
+
+#thank-you {
+    display: none;
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    background-color: #f49101;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    box-shadow: 0 3px 3px #bbb;
+}
+#alert-exit {
+    /* position: absolute; */
     width: 100px;
-    bottom: 20px;
+    /* bottom: 20px;
     left: 0;
-    right: 0;
+    right: 0; */
     margin: 0 auto;
     background-color: black;
     color: white;
