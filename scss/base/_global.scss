@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $floral-white;
+    font: 1em 'Roboto', sans-serif;
+}
+
+header {
+    background-color: $header-bg;
+    display: flex;
+    flex-direction: column-reverse;
+    @include medq($break-m) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img {
+    @include image;
+    @include medq($break-m) {
+        margin: auto 20px;
+    }
+}

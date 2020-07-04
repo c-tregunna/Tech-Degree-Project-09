@@ -1,0 +1,15 @@
+//Mixins
+
+@mixin image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  @mixin medq($break) {
+    @media (min-width: $break-m) {
+      @content;
+    }
+  }
