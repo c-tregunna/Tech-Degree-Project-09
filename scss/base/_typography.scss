@@ -6,14 +6,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $headings;
+    font-family: $text;
     letter-spacing: 2px;
 }
 header h1 {
     text-align: center;
     font-size: 1.8em;
     letter-spacing: 2px;
-    @include medq($break-l) {
+    @include medqL($break-l) {
         font-size: 2.4em;
     }
 }
@@ -21,11 +21,12 @@ header h1 {
 header h2 {
     text-align: center;
     font-size: 1.5em;
-    @include medq($break-l) {
+    color: lighten($black-olive, 20%);
+    @include medqL($break-l) {
         font-size: 1.8em;
     }
 }
 
-h2.skills-header {
+h2.section-header {
     text-align: center;
 }

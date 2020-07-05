@@ -4,8 +4,9 @@
 
 body {
     background: $floral-white;
-    font: 1em 'Josefin Sans', Helvetica, Arial, sans-serif;
+    font-family: $text;
     font-weight: 300;
+    color: $black-olive;
 }
 
 header {
@@ -15,21 +16,19 @@ header {
     flex-direction: column-reverse;
     @include medq($break-m) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
+}
+
+.header-hr {
+    width: 70%;
+    margin: auto;
 }
 
 .headings {
     display: flex;
     flex-direction: column;
-}
-
-.header-img {
-    @include image;
-    @include medq($break-m) {
-        margin: auto 20px;
-    }
 }
 
 .about-container {
@@ -50,4 +49,96 @@ header {
     @include medq($break-m) {
         width: 40%;
     }
+}
+
+#work {
+    width: 100%;
+    padding: 10px;
+}
+
+.portfolio-contain {
+
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 1fr;
+    @include medq($break-m) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include medqL($break-l) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.project {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-bottom: 8px;
+    border: 1px solid $pale-silver;
+}
+
+.project img {
+    transition: all .4s ease-in-out;
+}
+
+.work-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-bottom: 8px;
+    transition: all .4s ease-in-out;
+    background-color: $black-olive;
+  }
+
+  .project:hover img {
+    opacity: 0.3;
+  }
+
+  .project:hover .work-overlay {
+    opacity: .4;
+  }
+
+.pro-3 {
+    background-color: lightskyblue;
+}
+.pro-4 {
+    background-color: lightgoldenrodyellow;
+}
+.pro-5 {
+    background-color: lightsalmon;
+}
+.pro-6 {
+    background-color: lightseagreen;
+}
+
+
+footer {
+    background-color: $header-bg;
+    color: $black-olive;
+    @include flexMobile;
+    @include medq($break-m) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        .email-add {
+            order: 5;
+        }
+    }
+}
+
+footer a {
+    text-decoration: none;
 }

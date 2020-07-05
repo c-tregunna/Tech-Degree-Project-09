@@ -1,0 +1,12 @@
+.project button {
+    background-color: $white;
+    height: 40px;
+    width: 30%;
+    border: 1px solid $black-olive;
+    border-radius: 6px;
+    transition: background-color .5s ease-in-out;
+}
+
+.project button:hover {
+    background-color: lighten($flame, 10%);
+}

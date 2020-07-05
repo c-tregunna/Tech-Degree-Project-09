@@ -1,0 +1,13 @@
+.social-icon {
+    height: 40px;
+    padding: 0 6px;
+    fill: $header-bg;
+}
+
+.header-img {
+    @include image;
+    @include medq($break-m) {
+        margin: auto 20px;
+    }
+}
+

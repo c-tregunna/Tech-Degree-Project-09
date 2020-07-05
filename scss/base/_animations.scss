@@ -3,9 +3,14 @@
 	        animation: slide-in-blurred-left 1.5s ease-in-out both;
 }
 
+.slide-in-blurred-left-hr {
+	-webkit-animation: slide-in-blurred-left 1.5s ease-in-out .75s both;
+	        animation: slide-in-blurred-left 1.5s ease-in-out .75s both;
+}
+
 .slide-in-blurred-left-delay {
-	-webkit-animation: slide-in-blurred-left 1.5s ease-in-out 1s both;
-	        animation: slide-in-blurred-left 1.5s ease-in-out 1s both;
+	-webkit-animation: slide-in-blurred-left 1.5s ease-in-out 1.25s both;
+	        animation: slide-in-blurred-left 1.5s ease-in-out 1.25s both;
 }
 
 // .skills {

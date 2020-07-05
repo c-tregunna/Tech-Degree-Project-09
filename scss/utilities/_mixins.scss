@@ -7,8 +7,21 @@
     max-width: 100%;
   }
 
+@mixin flexMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
   @mixin medq($break) {
     @media (min-width: $break-m) {
+      @content;
+    }
+  }
+
+  @mixin medqL($break) {
+    @media (min-width: $break-l) {
       @content;
     }
   }
