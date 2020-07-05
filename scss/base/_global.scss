@@ -31,3 +31,22 @@ header {
         margin: auto 20px;
     }
 }
+
+.bar-container {
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    border: 1px solid;
+    position: relative;
+}
+
+.bar-container .bar-fill {
+    width: 25%;
+    height: 100%;
+    background-color: $flame;
+    z-index: 100;
+    position: absolute;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
