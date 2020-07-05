@@ -6,12 +6,14 @@
 
 body {
   background: #fffcf2ff;
-  font: 1em "Roboto", sans-serif;
+  font: 1em "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 header {
   background-color: #ecf0f1;
   display: flex;
+  padding-top: 40px;
   flex-direction: column-reverse;
 }
 @media (min-width: 768px) {
@@ -31,7 +33,6 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   max-width: 100%;
 }
 @media (min-width: 768px) {
@@ -101,14 +102,123 @@ header {
     opacity: 1;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bangers", cursive;
+}
+
 header h1 {
   text-align: center;
   font-size: 1.8em;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.4em;
+  }
 }
 
 header h2 {
   text-align: center;
   font-size: 1.5em;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  header h2 {
+    font-size: 1.8em;
+  }
+}
+
+.main-nav {
+  background-color: #ecf0f1;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10000;
+  padding-left: 20px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: rgba(64, 61, 57, 0.98);
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay a {
+  padding: 20px 8px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #fffcf2ff;
+  display: block;
+  transition: 1s;
+  z-index: 10000;
+}
+
+.overlay a:hover,
+.overlay a:focus,
+span#menuIcon:hover {
+  color: #eb5e28ff;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 1.5em;
+  padding: 5px;
+  transition: 1.3s ease-in-out;
+}
+
+.overlay .closebtn:hover {
+  transform: rotate(540deg) scale(1.4);
+}
+
+span#menuIcon {
+  font-size: 20px;
+  padding: 3px;
+  cursor: pointer;
+  color: #403d39ff;
+  transition: 1s;
+}
+
+@media (min-width: 768px) {
+  .overlay a {
+    font-size: 1.5rem;
+  }
+
+  .overlay .closebtn {
+    font-size: 2rem;
+  }
+
+  span#menuIcon {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .overlay-content {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
