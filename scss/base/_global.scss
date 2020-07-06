@@ -61,7 +61,7 @@ header {
     width:90%;
     margin: auto;
     display: grid;
-    grid-gap: 4px;
+    grid-gap: 6px;
     grid-template-columns: 1fr;
     @include medq($break-m) {
         grid-template-columns: 1fr 1fr;
@@ -72,14 +72,14 @@ header {
 }
 
 .project {
+    height: 250px;
     position: relative;
-    height: 300px;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    padding-bottom: 8px;
+    align-items: center;
+    justify-content: center0;
     border: 1px solid $pale-silver;
+    border-radius: 4px;
 }
 
 .project img {
@@ -90,6 +90,7 @@ header {
     width: 100%;
     height: 100%;
     opacity: 0;
+    background-color: $floral-white-a;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,29 +102,11 @@ header {
     justify-content: space-evenly;
     padding-bottom: 8px;
     transition: all .4s ease-in-out;
-    background-color: $black-olive;
-  }
-
-  .project:hover img {
-    opacity: 0.3;
   }
 
   .project:hover .work-overlay {
-    opacity: .4;
+    opacity: 1;
   }
-
-.pro-3 {
-    background-color: lightskyblue;
-}
-.pro-4 {
-    background-color: lightgoldenrodyellow;
-}
-.pro-5 {
-    background-color: lightsalmon;
-}
-.pro-6 {
-    background-color: lightseagreen;
-}
 
 
 footer {
@@ -139,6 +122,3 @@ footer {
     }
 }
 
-footer a {
-    text-decoration: none;
-}

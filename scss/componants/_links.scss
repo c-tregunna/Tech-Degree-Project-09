@@ -1,0 +1,11 @@
+
+footer a,
+button a {
+    @include links;
+}
+
+
+footer a:hover,
+button a:hover {
+    text-decoration: underline;
+}

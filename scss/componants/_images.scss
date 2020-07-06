@@ -1,7 +1,16 @@
 .social-icon {
-    height: 40px;
+    height: 60px;
     padding: 0 6px;
     fill: $header-bg;
+}
+
+path {
+    fill: $black-olive !important;
+    transition: fill .5s ease-in-out;
+}
+
+path:hover {
+    fill: lighten($black-olive, 20%) !important;
 }
 
 .header-img {
@@ -9,5 +18,9 @@
     @include medq($break-m) {
         margin: auto 20px;
     }
+}
+
+.project-img {
+    @include image;
 }
 

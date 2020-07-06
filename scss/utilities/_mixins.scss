@@ -14,6 +14,11 @@
   align-items: center;
 }
 
+@mixin links {
+    text-decoration: none;
+    color: $black-olive;
+}
+
   @mixin medq($break) {
     @media (min-width: $break-m) {
       @content;
