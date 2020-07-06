@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fffcf2ff;
   font-family: "Montserrat", sans-serif;
@@ -240,6 +244,16 @@ header h2 {
 
 h2.section-header {
   text-align: center;
+}
+
+.quote {
+  border-top: 1px solid rgba(64, 61, 57, 0.98);
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  width: 60%;
+  padding-top: 20px;
+  margin: 20px auto;
 }
 
 .main-nav {
