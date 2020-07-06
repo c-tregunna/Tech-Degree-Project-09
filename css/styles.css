@@ -53,6 +53,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   #about,
@@ -352,7 +353,7 @@ path:hover {
 }
 
 .project button:hover {
-  background-color: #ef8157;
+  background-color: #f4a485;
 }
 
 .overlay a {
@@ -381,6 +382,10 @@ footer a,
 button a {
   text-decoration: none;
   color: #403d39ff;
+}
+
+a:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

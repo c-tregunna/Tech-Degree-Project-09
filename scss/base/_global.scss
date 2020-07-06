@@ -46,6 +46,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    text-align: justify;
     @include medq($break-m) {
         width: 40%;
     }
