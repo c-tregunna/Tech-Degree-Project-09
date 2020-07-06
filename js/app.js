@@ -57,7 +57,7 @@ var chart = new Chart(ctx, {
             backgroundColor: ['#ccc5b9ff',
             '#403d39ff',
             '#eb5e28ff'],
-            data: [40, 40, 20]
+            data: [45, 40, 15]
         }]
     },
 

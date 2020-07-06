@@ -277,28 +277,6 @@ h2.section-header {
   }
 }
 
-.overlay a {
-  padding: 20px 8px;
-  text-decoration: none;
-  font-size: 1em;
-  color: #fffcf2ff;
-  display: block;
-  transition: 1s;
-  z-index: 10000;
-}
-@media (min-width: 768px) {
-  .overlay a {
-    font-size: 1.5rem;
-  }
-}
-
-.overlay a:hover,
-.overlay a:focus,
-span#menuIcon:hover {
-  color: #eb5e28ff;
-  cursor: pointer;
-}
-
 .overlay .closebtn {
   position: absolute;
   top: 10px;
@@ -330,24 +308,6 @@ span#menuIcon {
   }
 }
 
-@media (min-width: 768px) {
-  .overlay a {
-    font-size: 1.5rem;
-  }
-
-  .overlay .closebtn {
-    font-size: 2rem;
-  }
-
-  span#menuIcon {
-    font-size: 30px;
-  }
-}
-@media (min-width: 1024px) {
-  .overlay-content {
-    margin-top: 20px;
-  }
-}
 .social-icon {
   height: 60px;
   padding: 0 6px;
@@ -395,15 +355,32 @@ path:hover {
   background-color: #ef8157;
 }
 
+.overlay a {
+  padding: 20px 8px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #fffcf2ff;
+  display: block;
+  transition: 1s;
+  z-index: 10000;
+}
+@media (min-width: 768px) {
+  .overlay a {
+    font-size: 1.5rem;
+  }
+}
+
+.overlay a:hover,
+.overlay a:focus,
+span#menuIcon:hover {
+  color: #eb5e28ff;
+  cursor: pointer;
+}
+
 footer a,
 button a {
   text-decoration: none;
   color: #403d39ff;
-}
-
-footer a:hover,
-button a:hover {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

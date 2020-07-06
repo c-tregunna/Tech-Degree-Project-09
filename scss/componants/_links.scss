@@ -1,11 +1,25 @@
 
+.overlay a {
+    padding: 20px 8px;
+    text-decoration: none;
+    font-size: 1em;
+    color: $floral-white;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    @include medq($break-m) {
+        font-size: 1.5rem;
+    }
+}
+
+.overlay a:hover,
+.overlay a:focus,
+span#menuIcon:hover {
+  color: $flame;
+  cursor: pointer;
+}
+
 footer a,
 button a {
     @include links;
-}
-
-
-footer a:hover,
-button a:hover {
-    text-decoration: underline;
 }
