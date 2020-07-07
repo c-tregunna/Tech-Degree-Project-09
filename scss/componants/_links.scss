@@ -12,17 +12,27 @@
     }
 }
 
+#about a:hover,
+#about a:focus,
+footer a:hover,
+footer a:focus,
 .overlay a:hover,
 .overlay a:focus,
 span#menuIcon:hover {
-  color: $flame;
-  cursor: pointer;
+  @include linksHover
 }
 
+#about a,
 footer a,
 button a {
     @include links;
+
 }
+
+// #about a:hover,
+// #about a:focus {
+//     color: $flame;
+// }
 
 a:focus {
     outline: none;

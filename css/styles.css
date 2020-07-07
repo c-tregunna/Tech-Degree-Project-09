@@ -446,6 +446,10 @@ path:hover {
   }
 }
 
+#about a:hover,
+#about a:focus,
+footer a:hover,
+footer a:focus,
 .overlay a:hover,
 .overlay a:focus,
 span#menuIcon:hover {
@@ -453,10 +457,12 @@ span#menuIcon:hover {
   cursor: pointer;
 }
 
+#about a,
 footer a,
 button a {
   text-decoration: none;
   color: #403d39ff;
+  transition: color 0.4s ease-in-out;
 }
 
 a:focus {

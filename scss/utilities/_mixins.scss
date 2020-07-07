@@ -17,6 +17,12 @@
 @mixin links {
     text-decoration: none;
     color: $black-olive;
+    transition: color .4s ease-in-out;
+}
+
+@mixin linksHover {
+  color: $flame;
+  cursor: pointer;
 }
 
   @mixin medq($break) {
