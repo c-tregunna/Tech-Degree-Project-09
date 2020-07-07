@@ -1,12 +1,25 @@
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
 .project button {
     background-color: $white;
-    height: 40px;
-    width: 30%;
+    height: 30px;
+    width: 20%;
     border: 1px solid $black-olive;
     border-radius: 6px;
     transition: background-color .5s ease-in-out;
+
 }
 
 .project button:hover {
     background-color: lighten($flame, 20%);
 }
+
+.project:hover button {
+    animation: projectSlideIn 1.5s forwards;
+}
+

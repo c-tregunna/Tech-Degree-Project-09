@@ -27,11 +27,6 @@ function menuHide(callback) {
 
 closeBtn.addEventListener('click', () => { // on click of close button, show main-nav and menu button
     menuHide();
-    // menuIcon.style.display = "block";
-    // mainNav.style.backgroundColor = "#ecf0f1";
-    // mainNav.style.transition = "all 1s"
-    // menu.style.width = "0";
-    // menu.style.transition = "all .8s";
 });
 
 links.addEventListener('click', () => { // on click of links, show main-nav and menu button

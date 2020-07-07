@@ -70,11 +70,29 @@
     }
   }
 
-//   @keyframes skills {
-//           0% {
-//                 transform: translateX(-90%)
-//           }
-//           100% {
-//                 transform: translateX(0)
-//           }
-//   }
+
+/**
+ * ----------------------------------------
+ * Own Animations
+ * ----------------------------------------
+ */
+
+ // For project overlays
+
+@keyframes projectSlideIn {
+        0% {
+          transform: translateX(-400px); // if you do 1000px will come from the right
+        }
+        100% {
+          transform: translateX(0%);
+        }
+}
+
+@keyframes projectSlideInRev {
+        0% {
+          transform: translateX(400px); // if you do 1000px will come from the right
+        }
+        100% {
+          transform: translateX(0%);
+        }
+}
