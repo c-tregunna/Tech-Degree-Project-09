@@ -414,20 +414,29 @@ path:hover {
   width: 100%;
 }
 
-.project button {
+a.project-link {
+  display: block;
   background-color: #fff;
   height: 30px;
   width: 20%;
   border: 1px solid #403d39ff;
   border-radius: 6px;
+  text-align: center;
+  padding-top: 4px;
+  text-decoration: none;
+  color: #403d39ff;
+  transition: color 0.4s ease-in-out;
+}
+
+.project .project-link {
   transition: background-color 0.5s ease-in-out;
 }
 
-.project button:hover {
+.project .project-link:hover {
   background-color: #f4a485;
 }
 
-.project:hover button {
+.project:hover .project-link {
   animation: projectSlideIn 1.5s forwards;
 }
 
