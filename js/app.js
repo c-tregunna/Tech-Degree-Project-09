@@ -16,7 +16,7 @@ menuIcon.addEventListener('click', () => { // on click of menu icon hide the mai
     menu.style.transition = "all .8s";
 });
 
-function menuHide(callback) {
+function menuHide(callback) {  // function for the menu overlay behaviour
     menuIcon.style.display = "block";
     mainNav.style.backgroundColor = "#ecf0f1";
     mainNav.style.transition = "all 1s";
@@ -31,8 +31,6 @@ closeBtn.addEventListener('click', () => { // on click of close button, show mai
 links.addEventListener('click', () => { // on click of links, show main-nav and menu button
     menuHide();
 });
-
-// Target the li's so on click the menu closes
 
 //----------------------
 // Skills Chart
