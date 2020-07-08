@@ -318,6 +318,7 @@ h2.section-header {
   padding-top: 20px;
   margin: 20px auto;
   flex-grow: 4;
+  text-shadow: 1px 1px 1px #403d39ff;
 }
 
 .main-nav {

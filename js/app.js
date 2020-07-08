@@ -80,30 +80,70 @@ currentYear.innerHTML = year;
 // Scroll through array of quotes
 //-------------------------------
 
-let quotes = [
-    'If You Think Math is Hard Try Web Design - Pixxelznet',
-    'It does not work, why? Oh it works....but why? - Every developer ever',
-    'Website without visitors is like a ship lost in the horizon - Dr. Christopher Dayagdag',
-    'If you can not explain it simply, you do no understand it well enough - Albert Einstein',
-    'Digital design is like painting, except the paint never dries - Neville Brody'
-];
+// let quotes = [
+//     'Claire_Tregunna_Avatar.png',
+//     // 'If You Think Math is Hard Try Web Design - Pixxelznet',
+//     'It does not work, why? Oh it works....but why? - Every developer ever',
+//     'Website without visitors is like a ship lost in the horizon - Dr. Christopher Dayagdag',
+//     'If you can not explain it simply, you do no understand it well enough - Albert Einstein',
+//     'Digital design is like painting, except the paint never dries - Neville Brody'
+// ];
 
-const quote = document.querySelector('.quote');
+const photos = [
+    {
+      photo: 'img/aussie.jpg',
+      text: 'Image of a dog'
+    },
+    {
+      photo: 'img/tabby.jpg',
+      text: 'Image of a cat'
+    },
+    {
+      photo: 'img/pug.jpg',
+      text: 'Image of a pug'
+    },
+    {
+      photo: 'img/persian.jpg',
+      text: 'Image of a flat face'
+    },
+    {
+      photo: 'img/golden.jpg',
+      text: 'Image of a goldie'
+    }
+  ];
+
+
+
+
+const gallery = document.querySelector('.photo');
+let html = '';
 let index = 0;
 const nextQuote = document.querySelector('.next');
 const prevQuote = document.querySelector('.prev');
 
-quote.innerHTML = quotes[index]; //Print first value of array right away.
+//gallery.innerHTML = photos[index]; //Print first value of array right away.
+
+html += `
+        <img src="${photos.photo}" alt="${photos.text}">
+        `;
 
 function nextElement(callback) {
-    index = (index + 1) % (quotes.length);
-    quote.innerHTML = quotes[index];
-}
+    if (index <= photos.length) {
+     index = (index + 1) % (photos.length);
+    } else {
+      index = 0;
+    }
+     gallery.innerHTML = photos[index];
+ }
 
 function prevElement(callback) {
-    index = (index - 1) % (quotes.length);
-    quote.innerHTML = quotes[index];
-}
+    if (index > 0) {
+      index = (index - 1) % (photos.length);
+    } else {
+      index = photos.length - 1;
+    }
+    gallery.innerHTML = photos[index];
+  }
 
 nextQuote.addEventListener('click', e => {
     nextElement();
