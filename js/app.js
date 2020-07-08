@@ -120,7 +120,11 @@ let index = 0;
 const nextQuote = document.querySelector('.next');
 const prevQuote = document.querySelector('.prev');
 
-//gallery.innerHTML = photos[index]; //Print first value of array right away.
+function html(callback) {
+    gallery.innerHTML = `<img src="${photos[index].photo}" alt="${photos[index].text}">`;
+}
+
+html(); //Print first value of array right away.
 
 function nextElement(callback) {
     if (index <= photos.length) {
@@ -128,7 +132,7 @@ function nextElement(callback) {
     } else {
       index = 0;
     }
-     gallery.innerHTML = `<img src="${photos[index].photo}" alt="${photos[index].text}">`;
+    html();
  }
 
 function prevElement(callback) {
@@ -137,7 +141,7 @@ function prevElement(callback) {
     } else {
       index = photos.length - 1;
     }
-    gallery.innerHTML = `<img src="${photos[index].photo}" alt="${photos[index].text}">`;
+    html();
   }
 
 nextQuote.addEventListener('click', e => {
