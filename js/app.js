@@ -128,7 +128,7 @@ function nextElement(callback) {
     } else {
       index = 0;
     }
-     gallery.innerHTML = `<img src="${photos[index].photo} alt="${photos[index].text}">`;
+     gallery.innerHTML = `<img src="${photos[index].photo}" alt="${photos[index].text}">`;
  }
 
 function prevElement(callback) {
@@ -137,8 +137,7 @@ function prevElement(callback) {
     } else {
       index = photos.length - 1;
     }
-    gallery.innerHTML = `<img src="${photos[index].photo} alt="${photos[index].text}">`;
-    gallery.innerHTML = html;
+    gallery.innerHTML = `<img src="${photos[index].photo}" alt="${photos[index].text}">`;
   }
 
 nextQuote.addEventListener('click', e => {
