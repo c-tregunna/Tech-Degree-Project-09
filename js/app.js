@@ -82,7 +82,7 @@ currentYear.innerHTML = year;
 
 let quotes = [
     'If You Think Math is Hard Try Web Design - Pixxelznet',
-    'It does not work, why? Oh it works....but why? - Me',
+    'It does not work, why? Oh it works....but why? - Every developer ever',
     'Website without visitors is like a ship lost in the horizon - Dr. Christopher Dayagdag',
     'If you can not explain it simply, you do no understand it well enough - Albert Einstein',
     'Digital design is like painting, except the paint never dries - Neville Brody'
@@ -112,6 +112,11 @@ nextQuote.addEventListener('click', e => {
 prevQuote.addEventListener('click', e => {
     prevElement();
 })
+
+// for (var i = 0; i < quotes.length; i++) {
+//     index += quotes[i];
+//     quote.innerHTML = quotes[index + 1];
+// }
 
 
 
