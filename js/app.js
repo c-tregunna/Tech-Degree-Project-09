@@ -75,3 +75,43 @@ let today = new Date();
 let year = today.getFullYear();
 let currentYear = document.querySelector('#date');
 currentYear.innerHTML = year;
+
+//-------------------------------
+// Scroll through array of quotes
+//-------------------------------
+
+let quotes = [
+    'If You Think Math is Hard Try Web Design - Pixxelznet',
+    'It does not work, why? Oh it works....but why? - Me',
+    'Website without visitors is like a ship lost in the horizon - Dr. Christopher Dayagdag',
+    'If you can not explain it simply, you do no understand it well enough - Albert Einstein',
+    'Digital design is like painting, except the paint never dries - Neville Brody'
+];
+
+const quote = document.querySelector('.quote');
+let index = 0;
+const nextQuote = document.querySelector('.next');
+const prevQuote = document.querySelector('.prev');
+
+quote.innerHTML = quotes[index]; //Print first value of array right away.
+
+function nextElement(callback) {
+    index = (index + 1) % (quotes.length);
+    quote.innerHTML = quotes[index];
+}
+
+function prevElement(callback) {
+    index = (index - 1) % (quotes.length);
+    quote.innerHTML = quotes[index];
+}
+
+nextQuote.addEventListener('click', e => {
+    nextElement();
+})
+
+prevQuote.addEventListener('click', e => {
+    prevElement();
+})
+
+
+

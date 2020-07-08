@@ -2,6 +2,8 @@
     background-color: $header-bg;
     height: 40px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     position: fixed;
     display: flex;
     justify-content: flex-start;

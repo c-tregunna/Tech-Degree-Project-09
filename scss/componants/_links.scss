@@ -23,8 +23,7 @@ span#menuIcon:hover {
 }
 
 #about a,
-footer a,
-button a {
+footer a {
     @include links;
 
 }

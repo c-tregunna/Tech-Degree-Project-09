@@ -15,7 +15,8 @@ a.project-link {
     border: 1px solid $black-olive;
     border-radius: 6px;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 6px;
+    font-size: .75em;
     @include links;
 }
 

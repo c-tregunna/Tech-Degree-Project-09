@@ -16,6 +16,12 @@ body {
   color: #403d39ff;
 }
 
+.wrapper {
+  width: 98%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-color: #ecf0f1;
   display: flex;
@@ -96,7 +102,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center0;
+  justify-content: center;
   border: 1px solid #ccc5b9ff;
   border-radius: 4px;
   overflow: hidden;
@@ -153,6 +159,13 @@ header {
 .project hr.hr {
   width: 80%;
   border-top: 1px solid #eb5e28ff;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer {
@@ -301,15 +314,18 @@ h2.section-header {
   display: block;
   font-size: 1.5em;
   text-align: center;
-  width: 60%;
+  width: 100%;
   padding-top: 20px;
   margin: 20px auto;
+  flex-grow: 4;
 }
 
 .main-nav {
   background-color: #ecf0f1;
   height: 40px;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   position: fixed;
   display: flex;
   justify-content: flex-start;
@@ -379,6 +395,13 @@ span#menuIcon {
   fill: #ecf0f1;
 }
 
+.next,
+.prev {
+  height: 20px;
+  padding: 0 6px;
+  display: inline-block;
+}
+
 path {
   fill: #403d39ff !important;
   transition: fill 0.5s ease-in-out;
@@ -422,7 +445,8 @@ a.project-link {
   border: 1px solid #403d39ff;
   border-radius: 6px;
   text-align: center;
-  padding-top: 4px;
+  padding-top: 6px;
+  font-size: 0.75em;
   text-decoration: none;
   color: #403d39ff;
   transition: color 0.4s ease-in-out;
@@ -467,8 +491,7 @@ span#menuIcon:hover {
 }
 
 #about a,
-footer a,
-button a {
+footer a {
   text-decoration: none;
   color: #403d39ff;
   transition: color 0.4s ease-in-out;

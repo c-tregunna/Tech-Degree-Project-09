@@ -4,6 +4,13 @@
     fill: $header-bg;
 }
 
+.next,
+.prev {
+    height: 20px;
+    padding: 0 6px;
+    display: inline-block;
+}
+
 path {
     fill: $black-olive !important;
     transition: fill .5s ease-in-out;
