@@ -77,17 +77,9 @@ let currentYear = document.querySelector('#date');
 currentYear.innerHTML = year;
 
 //-------------------------------
-// Scroll through array of quotes
+// Scroll through array of images for a gallery
 //-------------------------------
 
-// let quotes = [
-//     'Claire_Tregunna_Avatar.png',
-//     // 'If You Think Math is Hard Try Web Design - Pixxelznet',
-//     'It does not work, why? Oh it works....but why? - Every developer ever',
-//     'Website without visitors is like a ship lost in the horizon - Dr. Christopher Dayagdag',
-//     'If you can not explain it simply, you do no understand it well enough - Albert Einstein',
-//     'Digital design is like painting, except the paint never dries - Neville Brody'
-// ];
 
 const photos = [
     {
@@ -103,8 +95,8 @@ const photos = [
       text: 'Image of Loch Ness'
     },
     {
-      photo: 'img/sorrento.jpg',
-      text: 'Image of Sorrento, Italy'
+      photo: 'img/church.jpg',
+      text: 'Image of Worcester Cathedral'
     },
     {
       photo: 'img/meg.jpeg',
@@ -117,8 +109,8 @@ const photos = [
 
 const gallery = document.querySelector('.photo');
 let index = 0;
-const nextQuote = document.querySelector('.next');
-const prevQuote = document.querySelector('.prev');
+const nextImage = document.querySelector('.next');
+const prevImage = document.querySelector('.prev');
 
 function html(callback) {
     gallery.innerHTML = `<img src="${photos[index].photo}" alt="${photos[index].text}">`;
@@ -144,18 +136,14 @@ function prevElement(callback) {
     html();
   }
 
-nextQuote.addEventListener('click', e => {
+nextImage.addEventListener('click', e => {
     nextElement();
-})
+});
 
-prevQuote.addEventListener('click', e => {
+prevImage.addEventListener('click', e => {
     prevElement();
-})
+});
 
-// for (var i = 0; i < quotes.length; i++) {
-//     index += quotes[i];
-//     quote.innerHTML = quotes[index + 1];
-// }
 
 
 
