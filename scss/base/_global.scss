@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-    width: 98%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -45,7 +45,7 @@ header {
 .about-container {
     display: flex;
     flex-direction: column;
-    @include medq($break-m) {
+    @include medqL($break-l) {
         flex-direction: row;
         justify-content: space-evenly;
         align-content: flex-start;
@@ -56,13 +56,12 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: justify;
-    @include medq($break-m) {
+    @include medqL($break-l) {
         width: 40%;
     }
 }
-
 #work {
     width: 100%;
     padding: 10px;
@@ -151,7 +150,20 @@ header {
       border-top: 1px solid $flame;
   }
 
-.quote-container {
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.gallery-container p {
+    text-align: center;
+}
+
+
+.photo-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

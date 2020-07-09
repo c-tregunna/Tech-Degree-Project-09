@@ -10,6 +10,35 @@
     align-items: center;
     z-index: 10000;
     padding-left: 20px;
+    @include medq($break-m) {
+      padding-left: 0px;
+    }
+}
+
+.wide-nav {
+  display: none;
+  @include medq($break-m) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+  max-width: 1000px;
+}
+}
+
+.wide-nav li {
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.wide-nav a {
+  @include links;
+}
+
+.wide-nav a:hover {
+  @include linksHover;
 }
 
 .overlay {
@@ -59,5 +88,6 @@ span#menuIcon {
     transition: 1s;
     @include medq($break-m) {
       font-size: 30px;
+      display: none;
     }
 }

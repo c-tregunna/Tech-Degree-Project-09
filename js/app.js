@@ -91,24 +91,24 @@ currentYear.innerHTML = year;
 
 const photos = [
     {
-      photo: 'img/aussie.jpg',
-      text: 'Image of a dog'
+      photo: 'img/bike.jpg',
+      text: 'Image of a bike against a railing'
     },
     {
-      photo: 'img/tabby.jpg',
-      text: 'Image of a cat'
+      photo: 'img/island.jpg',
+      text: 'Image of Porto Santo island'
     },
     {
-      photo: 'img/pug.jpg',
-      text: 'Image of a pug'
+      photo: 'img/lochNess.jpg',
+      text: 'Image of Loch Ness'
     },
     {
-      photo: 'img/persian.jpg',
-      text: 'Image of a flat face'
+      photo: 'img/sorrento.jpg',
+      text: 'Image of Sorrento, Italy'
     },
     {
-      photo: 'img/golden.jpg',
-      text: 'Image of a goldie'
+      photo: 'img/meg.jpeg',
+      text: 'Image of Meg the Westie, best dog in the world'
     }
   ];
 

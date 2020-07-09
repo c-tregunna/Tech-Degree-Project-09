@@ -12,11 +12,18 @@
 <body>
     <div class="wrapper">
         <nav class="main-nav">
+            <ul class="wide-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#gallery">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn">&times;</a>  <!--href="javascript:void(0)" this was included, is it needed-->
                 <div class="overlay-content">
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
+                <a href="#gallery">Photos</a>
                 <a href="#contact">Contact</a>
                 </div>
             </div>
@@ -134,14 +141,17 @@
                 </div>
             </section>
         </div>
-        <div class="quote-container">
-            <img src="img/svg/leftArrow.svg" class="prev" alt="previous quote arrow">
-            <div class="photo">
+        <section class="gallery-container" id="gallery">
+            <h2 class="photo-title">Some of my photos</h2>
+            <p>Hover over to have a closer look and click the arrows to view more</p>
+            <div class="photo-container">
+                <img src="img/svg/leftArrow.svg" class="prev" alt="previous quote arrow">
+                <div class="photo">
                 <!-- Photos will be added from javascript here -->
+                </div>
+                <img src="img/svg/rightArrow.svg" class="next" alt="previous quote arrow">
             </div>
-            <!-- <p class="quote"></p> -->
-            <img src="img/svg/rightArrow.svg" class="next" alt="previous quote arrow">
-        </div>
+        </section>
         <footer id="contact">
             <p class="copyright">&copy; Claire Tregunna - <span id="date"></span></p>
             <p class="email-add"><a href="mailto:clairet.dev@gmail.com?subject=Email%20from%20portfolio%20site" target="_blank">clairet.dev@gmail.com</a></p>
