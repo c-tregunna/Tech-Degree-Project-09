@@ -17,7 +17,12 @@ menuIcon.addEventListener('click', () => { // on click of menu icon hide the mai
 });
 
 function menuHide(callback) {  // function for the menu overlay behaviour
-    menuIcon.style.display = "block";
+    //menuIcon.style.display = "block";
+    if (window.innerWidth > 768) {
+      menuIcon.style.display = 'none';
+    } else {
+      menuIcon.style.display = 'block';
+    }
     mainNav.style.backgroundColor = "#ecf0f1";
     mainNav.style.transition = "all 1s";
     menu.style.width = "0";

@@ -93,3 +93,9 @@ span#menuIcon {
       display: none;
     }
 }
+
+.hidden {
+    @include medq($break-m) {
+      display: none;
+    }
+  }

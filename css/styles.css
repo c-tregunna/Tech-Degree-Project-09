@@ -440,6 +440,12 @@ span#menuIcon {
   }
 }
 
+@media (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
+}
+
 .social-icon {
   height: 60px;
   padding: 0 6px;
