@@ -10,12 +10,14 @@ const links = document.querySelector(".overlay-content");
 
 menuIcon.addEventListener('click', () => { // on click of menu icon hide the main-nav background and icon
     //menuIcon.style.display = "none";
+    window.onresize = function() {
 
     if (window.innerWidth > 768) {
       menuIcon.style.display = 'none';
     } else {
       menuIcon.style.display = 'block';
     }
+  }
 
     mainNav.style.backgroundColor = "transparent";
     mainNav.style.transition = "all 1s";
@@ -25,12 +27,6 @@ menuIcon.addEventListener('click', () => { // on click of menu icon hide the mai
 
 function menuHide(callback) {  // function for the menu overlay behaviour
     menuIcon.style.display = "block";
-    // if (window.innerWidth > 768) {
-    //   menuIcon.style.display = 'none';
-    // } else {
-    //   menuIcon.style.display = 'block';
-    // }
-
     mainNav.style.backgroundColor = "#ecf0f1";
     mainNav.style.transition = "all 1s";
     menu.style.width = "0";
